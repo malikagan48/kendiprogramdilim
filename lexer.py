@@ -38,7 +38,7 @@ class Lexer:
                 self.advance()
                 yield Token(TokenType.RPAREN)
                 else:
-                    raise Exception(f"Illegal character'{self.current_char}'")
+                    raise Exception(f"Uygun olmayan karakter'{self.current_char}'")
 
 
        def generate_number(self):
